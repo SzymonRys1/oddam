@@ -3,10 +3,11 @@ import {
     HashRouter,
     Route,
     Routes,
-    Link,
+    Link as Link1,
     Switch,
     NavLink,
 } from 'react-router-dom';
+import {Link as Link2} from 'react-scroll';
 
 const HomeHeader = () => {
     return (
@@ -16,12 +17,12 @@ const HomeHeader = () => {
             </div>
             <div className="header_right">
                 <div className="header_logs">
-                    <Link to='/logowanie' className="header_logs_login">Zaloguj</Link>
-                    <Link to='/rejestracja' className="header_logs_register">Załóż konto</Link>
+                    <Link1 to='/logowanie' className="header_logs_login">Zaloguj</Link1>
+                    <Link1 to='/rejestracja' className="header_logs_register">Załóż konto</Link1>
                 </div>
                 <div className="header_options">
                     <a href="#start" className="header_option start">Start</a>
-                    <a href="#about" className="header_option about">O co chodzi?</a>
+                    <Link2 to="about" spy={true} smooth={true} offset={50} duration={500} className="header_option about">O co chodzi?</Link2>
                     <a href="#about_us" className="header_option about_us">O nas</a>
                     <a href="#foundations" className="header_option foundations">Fundacje i organizacje</a>
                     <a href="#contact" className="header_option contact">Kontakt</a>
@@ -32,8 +33,8 @@ const HomeHeader = () => {
                 <div className="header_decoration">
                 </div>
                 <div className="header_actions">
-                    <Link to='/logowanie' className="header_action">Oddaj rzeczy</Link>
-                    <Link to='/logowanie' className="header_action">Zorganizuj zbiórkę</Link>
+                    <Link1 to='/logowanie' className="header_action">Oddaj rzeczy</Link1>
+                    <Link1 to='/logowanie' className="header_action">Zorganizuj zbiórkę</Link1>
                 </div>
             </div>
         </section>
