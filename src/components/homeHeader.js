@@ -23,9 +23,9 @@ const HomeHeader = () => {
                 <div className="header_options">
                     <a href="#start" className="header_option start">Start</a>
                     <Link2 to="about" spy={true} smooth={true} offset={50} duration={500} className="header_option about">O co chodzi?</Link2>
-                    <a href="#about_us" className="header_option about_us">O nas</a>
-                    <a href="#foundations" className="header_option foundations">Fundacje i organizacje</a>
-                    <a href="#contact" className="header_option contact">Kontakt</a>
+                    <Link2 to="about_us" spy={true} smooth={true} offset={50} duration={500} className="header_option about_us">O nas</Link2>
+                    <Link2 to="foundations" spy={true} smooth={true} offset={50} duration={500} className="header_option foundations">Fundacje i organizacje</Link2>
+                    <Link2 to="contact" spy={true} smooth={true} offset={50} duration={500}  className="header_option contact">Kontakt</Link2>
                 </div>
                 <div className="header_quote">
                     <h1>Zacznij pomagać!<br /> Oddaj niechciane rzeczy w zaufane ręce</h1>
