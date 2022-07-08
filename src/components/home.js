@@ -4,7 +4,10 @@ import HomeThreeColumns from "./homeThreeColumns";
 
 const Home = () => {
     return (
-        <HomeHeader />
+        <>
+            <HomeHeader />
+            <HomeThreeColumns />
+        </>
     );
 }
 
