@@ -3,6 +3,10 @@
 @import './settings/fonts';
 
 
+@import './components/homeHeader';
+
+
 body {
     font-family: $font-base;
+    box-sizing: border-box;
 }
