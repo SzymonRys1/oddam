@@ -3,6 +3,13 @@
 @import './settings/fonts';
 
 
+@import './components/homeHeader';
+@import './components/homeThreeColumns';
+@import './components/homeSteps';
+@import './components/homeAboutUs';
+
+
 body {
     font-family: $font-base;
+    box-sizing: border-box;
 }
