@@ -11,15 +11,18 @@ import {
 
 
 import Home from './components/home';
-import HomeHeader from './components/homeHeader';
-
+import LogIn from './components/logIn';
+import Register from './components/register';
+import LogOut from './components/logOut';
 
 const App = () => {
   return (
     <HashRouter>
       <Routes>
         <Route exact path='/' element={<Home />} />
-        <Route path='/contact' element={<HomeHeader />} />
+        <Route path='/logowanie' element={<LogIn />} />
+        <Route path='/rejestracja' element={<Register />} />
+        <Route path='/wylogowano' element={<LogOut />} />
       </Routes>
     </HashRouter>
   );

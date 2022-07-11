@@ -1,0 +1,91 @@
+.logOut {
+
+    &_menu {
+        margin-right: 80px;
+    }
+
+    .logOut_logs {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 40px;
+        text-decoration: none;
+        font-size: 14px;
+
+
+        &_login,
+        &_login:active,
+        &_login:visited {
+            text-decoration: none;
+            color: black;
+            margin-right: 20px;
+            padding: 10px;
+        }
+
+        &_register,
+        &_register:active,
+        &_register:visited {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            border: 0.75px solid $color-yellow;
+        }
+    }
+
+    .logOut_options {
+
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+
+        .logOut_option {
+            text-decoration: none;
+            margin: 10px;
+            color: black;
+            font-weight: 400;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .start {
+            border: 0.75px solid $color-dark;
+            padding: 9px 20px;
+            position: relative;
+            top: -9px;
+        }
+    }
+
+    &_info {
+
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 130px;
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        span {
+            background-image: url("../../assets/Decoration@2x.png");
+            width: 253px;
+            height: 33px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0 auto;
+        }
+
+        .logOut_info_btn,
+        .logOut_info_btn:active,
+        .logOut_info_btn:visited {
+            text-decoration: none;
+            color: black;
+            margin-top: 30px;
+            border: 1px solid black;
+            padding: 13px 17px;
+        }
+    }
+}

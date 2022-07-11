@@ -1,15 +1,20 @@
-import React from "react";
-import {
-    HashRouter,
-    Route,
-    Routes,
-    Link as Link1,
-    Switch,
-    NavLink,
-} from 'react-router-dom';
+import React, {useState} from "react";
+import { onAuthStateChanged, signOut } from "firebase/auth";
+import { Link as Link1 } from 'react-router-dom';
 import {Link as Link2} from 'react-scroll';
+import { auth } from "../firebase";
 
 const HomeHeader = () => {
+    const [user, setUser] = useState("");
+
+    onAuthStateChanged(auth, (currentUser) => {
+        setUser(currentUser);
+    });
+
+    const logOutUser = async () => {
+        await signOut(auth);
+    }
+
     return (
         <section className="header">
             <div className="header_left">
@@ -17,8 +22,8 @@ const HomeHeader = () => {
             </div>
             <div className="header_right">
                 <div className="header_logs">
-                    <Link1 to='/logowanie' className="header_logs_login">Zaloguj</Link1>
-                    <Link1 to='/rejestracja' className="header_logs_register">Załóż konto</Link1>
+                    {user ? <p className="header_logs_login">Witaj {user.email} !</p> : <Link1 to='/logowanie' className="header_logs_login">Zaloguj</Link1>}
+                    {user ? <Link1 to='/wylogowano' className="header_logs_register" onClick={logOutUser}>Wyloguj</Link1> : <Link1 to='/rejestracja' className="header_logs_register">Załóż konto</Link1>}
                 </div>
                 <div className="header_options">
                     <a href="#start" className="header_option start">Start</a>

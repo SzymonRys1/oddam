@@ -9,6 +9,11 @@
 @import './components/homeAboutUs';
 
 
+@import './components/logIn';
+@import './components/register';
+@import './components/logOut';
+
+
 body {
     font-family: $font-base;
     box-sizing: border-box;
