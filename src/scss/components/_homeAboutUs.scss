@@ -1,12 +1,12 @@
 .homeAboutUs {
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 800px;
     align-items: center;
 
     &_left {
         height: 100%;
-        width: 50%;
+        width: 50vw;
         background-color: $color-white;
         display: flex;
         justify-content: center;
@@ -50,7 +50,7 @@
     }
 
     &_right {
-        width: 50%;
+        width: 50vw;
         height: 800px;
         background-image: url('../../assets/People.jpg');
         background-size: cover;

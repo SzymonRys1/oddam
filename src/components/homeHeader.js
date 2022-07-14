@@ -28,8 +28,8 @@ const HomeHeader = () => {
                 <div className="header_options">
                     <a href="#start" className="header_option start">Start</a>
                     <Link2 to="about" spy={true} smooth={true} offset={50} duration={500} className="header_option about">O co chodzi?</Link2>
-                    <Link2 to="about_us" spy={true} smooth={true} offset={50} duration={500} className="header_option about_us">O nas</Link2>
-                    <Link2 to="foundations" spy={true} smooth={true} offset={50} duration={500} className="header_option foundations">Fundacje i organizacje</Link2>
+                    <Link2 to="about_us" spy={true} smooth={true} offset={50} duration={650} className="header_option about_us">O nas</Link2>
+                    <Link2 to="fundations" spy={true} smooth={true} offset={50} duration={800} className="header_option foundations">Fundacje i organizacje</Link2>
                     <Link2 to="contact" spy={true} smooth={true} offset={50} duration={500}  className="header_option contact">Kontakt</Link2>
                 </div>
                 <div className="header_quote">

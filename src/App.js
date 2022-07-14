@@ -14,6 +14,7 @@ import Home from './components/home';
 import LogIn from './components/logIn';
 import Register from './components/register';
 import LogOut from './components/logOut';
+import HomeHelp from './components/homeHelp';
 
 const App = () => {
   return (

@@ -1,0 +1,110 @@
+.homeHelp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    h1 {
+        margin-top: 40px;
+        font-size: 24px;
+        font-weight: normal;
+        margin-bottom: 40px;
+    }
+
+    span {
+        background-image: url("../../assets/Decoration@2x.png");
+        width: 253px;
+        height: 33px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+    }
+
+    &_btns {
+        margin-top: 40px;
+        display: flex;
+        width: 700px;
+        justify-content: space-between;
+
+
+        .homeHelp_btn {
+            font-size: 24px;
+            border: none;
+            background-color: transparent;
+            padding: 11px 50px;
+        }
+
+        .active {
+            border: 1px solid black;
+        }
+    }
+
+    p.quote {
+        margin-top: 70px;
+        width: 640px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .homeHelp_elements {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        width: 1200px;
+        height: 332px;
+
+
+        .homeHelp_element {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1200px;
+            border-bottom: 1px solid $color-dark;
+
+            &:nth-child(3) {
+                border: none;
+            }
+
+            &_left {
+                .element_name {
+                    font-size: 26px;
+                    font-weight: 300;
+                    margin-bottom: 6px;
+                    margin-top: 30px;
+                }
+
+                .element_mission {
+                    font-size: 18px;
+                    font-weight: 300;
+                    margin-bottom: 30px;
+                }
+            }
+
+            &_right {
+                .element_items {
+                    font-size: 18px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+    .pagination {
+        display: flex;
+        margin-top: 30px;
+
+        &_element {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #fdfdfe;
+            padding: 10px 10px;
+        }
+
+        .element_active {
+            border: 1px solid black;
+        }
+    }
+}
